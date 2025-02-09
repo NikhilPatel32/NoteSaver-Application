@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Paste from './components/Paste'
 import ViewPaste from './components/ViewPaste'
+import { Toaster } from 'react-hot-toast';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -35,7 +36,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
+    <>
+    <Toaster /> 
     <RouterProvider router={router} />
+    </>
   )
 }
 

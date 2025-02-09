@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import './Paste.css'
 import { removeFromPastes } from '../features/pasteSlice';
-import toast from 'react-hot-toast'
+import { toast } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom';
 const Paste = () => {
 
@@ -18,7 +18,7 @@ const Paste = () => {
 
     //delete
     function handleDelete(pasteId){
-       dispatch(removeFromPastes(pasteId));
+       dispatch(removeFromPastes(pasteId)); 
     }
 
    //share
@@ -34,14 +34,17 @@ const Paste = () => {
         })
         .then(() => {
           console.log('Note shared successfully!');
+          toast.success("Note shared successfully!");
         })
         .catch((error) => {
           console.error('Error sharing the note:', error);
+          toast.error("Failed to share the note.");
         });
     } else {
       // Fallback: Copy the content to the clipboard
       navigator.clipboard.writeText(noteContent).then(() => {
         alert('Note content copied to clipboard!');
+        toast.success("Note content copied to clipboard!"); 
       });
     }
   };
@@ -86,8 +89,8 @@ const Paste = () => {
             </button>
             <button className='delete-button' onClick={() => {handleDelete(note._id)}}></button>
             <button className='copy-button' onClick={() => 
-                {navigator.clipboard.writeText(note.content)
-                toast.success("copied to clipboard")}}>    
+                {navigator.clipboard.writeText(note.content);
+                toast.success("copied to clipboard");}}>    
             </button>
             <button className='share-button' onClick={() => {handleShare(note)}}></button>
         </div>
