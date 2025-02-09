@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.searchbar{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 94vw;
+}
+
+.filtered-data{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 94vw;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.top-level{
+    display: flex;
+}
+
+.title{
+    margin-right: 75vw;
+}
+.edit-button{
+    height: 35px;
+    width: 35px;
+    background-image: url('../assets/edit.png');
+    background-size: cover;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.delete-button{
+    height: 35px;
+    width: 35px;
+    background-image: url('../assets/delete.png');
+    background-size: cover;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.copy-button{
+    height: 35px;
+    width: 35px;
+    background-image: url('../assets/copy.png');
+    background-size: cover;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.view-button{
+    height: 35px;
+    width: 35px;
+    background-image: url('../assets/view.png');
+    background-size: cover;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.share-button{
+    height: 35px;
+    width: 35px;
+    background-image: url('../assets/share.png');
+    background-size: cover;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.empty-box{
+    text-align: center;
+    color: white;
+}
+

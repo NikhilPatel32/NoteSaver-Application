@@ -1,0 +1,36 @@
+.home{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.search-field{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.input-bar{
+    height: 30px;
+    border-radius: 5px;
+    width: 60vw;
+}
+
+.search-button{
+    height: 33px;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+.text-field{
+    width: 78vw;
+    margin: 10px;
+    height: 70vh;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(42, 41, 52);
+}
